@@ -22,6 +22,7 @@ class PocService(Construct):
                 "name": "token_key",
                 "type": ddb.AttributeType.STRING
             },
+            billing_mode=ddb.BillingMode.PAY_PER_REQUEST,
             removal_policy=RemovalPolicy.DESTROY  # NOT recommended for production code
         )
 
