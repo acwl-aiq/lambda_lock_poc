@@ -12,3 +12,10 @@ def dummy2(input: bool):
         return 1
     else:
         return 2
+
+
+def dummy3(input: bool):
+    if input:
+        return 1
+    else:
+        return 2
