@@ -1,0 +1,4 @@
+[tool.coverage.run]
+source = ['lib','lambda_lock_poc','construct']
+branch = true
+relative_files = true
