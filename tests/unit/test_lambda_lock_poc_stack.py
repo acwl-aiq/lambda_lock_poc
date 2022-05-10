@@ -6,8 +6,8 @@ import construct.dummy as dummy
 # resource in lambda_lock_poc/lambda_lock_poc_stack.py
 @pytest.mark.unit
 def test_sqs_queue_created():
-    assert dummy.Dummy.dummy(True) == 1
-    assert dummy.Dummy.dummy(False) == 2
+    assert dummy.Dummy.dummy(True, False, False) == 1
+    assert dummy.Dummy.dummy(False, False, False) == 2
     '''
     assert dummy.Dummy.dummy2(True) == 1
     assert dummy.Dummy.dummy2(False) == 2
