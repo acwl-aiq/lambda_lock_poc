@@ -1,4 +1,6 @@
 
+![Coverage badge](https://raw.githubusercontent.com/wiki/acwl-aiq/lambda_lock_poc/python-coverage-comment-action-badge.json)
+
 # Welcome to your CDK Python project!
 
 This is a blank project for Python development with CDK.
