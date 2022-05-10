@@ -36,14 +36,9 @@ jobs:
           pip install pytest
           pip install coverage
           if  [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Generate line coverage report
-        run: |
-          coverage run --source lib,lambda_lock_poc,construct -m pytest
-          coverage report
-          coverage html
       - name: Generate branch coverage report
         run: |
-          coverage run --branch --source lib,lambda_lock_poc,construct -m pytest
+          coverage run --rcfile=.coveragerc -m pytest
           coverage report
           coverage html
       - name: Coverage comment

@@ -1,0 +1,7 @@
+[run]
+branch = True
+relative_files = True
+source =
+        lib
+        lambda_lock_poc
+        construct
