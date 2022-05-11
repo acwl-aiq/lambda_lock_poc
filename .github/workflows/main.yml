@@ -40,7 +40,6 @@ jobs:
         run: |
           coverage run --rcfile=.coveragerc -m pytest
           coverage report
-          coverage html
       - name: Coverage comment
         id: coverage_comment
         uses: ewjoachim/python-coverage-comment-action@v2
